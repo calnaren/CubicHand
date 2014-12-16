@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/project/0.1459470737.1250607219/PATH/delimiter=\:
+environment/project/0.1459470737.1250607219/PATH/operation=replace
+environment/project/0.1459470737.1250607219/PATH/value=/usr/bin\:/bin\:/usr/sbin\:/sbin\:/Users/Kevin/Documents/adamgreen-gcc4mbed-1f1ebc4/gcc-arm-none-eabi/bin\:/Users/Kevin/CubicHand/mbed/libs
+environment/project/0.1459470737.1250607219/append=true
+environment/project/0.1459470737.1250607219/appendContributed=true
+environment/project/0.1459470737/PATH/delimiter=\:
+environment/project/0.1459470737/PATH/operation=replace
+environment/project/0.1459470737/PATH/value=/usr/bin\:/bin\:/usr/sbin\:/sbin\:/Users/Kevin/Documents/adamgreen-gcc4mbed-1f1ebc4/gcc-arm-none-eabi/bin
+environment/project/0.1459470737/append=true
+environment/project/0.1459470737/appendContributed=true
