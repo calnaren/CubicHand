@@ -12,12 +12,12 @@
 TCPClient CubeSocket;
 TCPClient GloveSocket;
 
-int numReceived;
+unsigned char numReceived;
 int receiveCount = 0;
-int pkglen;
+unsigned char pkglen;
 unsigned char bcc;
 
-unsigned char Buf[256];
+unsigned char Buf[1000];
 
 static void error(const char *msg)
 {
@@ -94,6 +94,7 @@ int main(int argc, char *argv[])
 
 
     GloveSocket.Init("192.168.1.33", "2000");
+    GloveSocket.SetOptions();
     printf("Connected to Glove \r\n");
 
     CubeSocket.Init("192.168.1.12", "2000");
@@ -118,7 +119,7 @@ int main(int argc, char *argv[])
     while(true) //for(volatile int i = 0; i < 5000; i++)
     {
         //printf("%d", Buf[0]);
-        if(i++%100 == 0) printf("Running\r\n");
+        if(i++%100 == 0) printf("Running %d\r\n", i/100);
         if(Receive())
         {
             //printf("%d \r\n" , GloveSocket.Receive(Buf, 10));
