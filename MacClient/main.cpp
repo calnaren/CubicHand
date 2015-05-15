@@ -65,7 +65,7 @@ bool Receive()
             {
                 //ReceiveCount++;
                 receiveCount++;
-                if(receiveCount > 1)
+                if(receiveCount > 9)
                 {
                     receiveCount = 0; //*/
                     CubeSocket.Send(Buf,numReceived);
@@ -93,11 +93,11 @@ int main(int argc, char *argv[])
     numReceived = 0;
 
 
-    GloveSocket.Init("192.168.1.33", "2000");
+    GloveSocket.Init("192.168.1.160", "2000");
     GloveSocket.SetOptions();
     printf("Connected to Glove \r\n");
 
-    CubeSocket.Init("192.168.1.12", "2000");
+    CubeSocket.Init("192.168.1.161", "2000");
     printf("Connected to Cube \r\n");
     unsigned char buffer[256];
  
